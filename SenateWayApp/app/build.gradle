@@ -1,0 +1,224 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+    id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.senateway.guesthouse'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.senateway.guesthouse"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+    
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+            returnDefaultValues = true
+        }
+        animationsDisabled = true
+    }
+    
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/DEPENDENCIES', 'META-INF/LICENSE', 'META-INF/LICENSE.txt', 'META-INF/license.txt', 'META-INF/NOTICE', 'META-INF/NOTICE.txt', 'META-INF/notice.txt', 'META-INF/ASL2.0', 'META-INF/*.kotlin_module']
+        }
+    }
+}
+
+configurations.all {
+    resolutionStrategy {
+        // Force dependency versions to fix vulnerabilities
+        force 'com.google.guava:guava:32.0.0-android'
+        force 'com.google.protobuf:protobuf-java:4.28.2'
+        force 'commons-io:commons-io:2.14.0'
+        force 'com.squareup.wire:wire-runtime:5.2.0'
+        force 'io.netty:netty-codec-http2:4.1.125.Final'
+        force 'io.netty:netty-codec-http:4.1.125.Final'
+        force 'io.netty:netty-handler:4.1.125.Final'
+        force 'io.netty:netty-common:4.1.118.Final'
+        // Force Kotlin stdlib for all configurations
+        force 'org.jetbrains.kotlin:kotlin-stdlib:2.1.0'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:2.1.0'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.1.0'
+    }
+}
+
+dependencies {
+    // AndroidX Core
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    
+    // Navigation Component
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.7.6'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.7.6'
+    
+    // Lifecycle
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.7.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0'
+    
+    // Fragment
+    implementation 'androidx.fragment:fragment-ktx:1.6.2'
+    
+    // Firebase
+    implementation platform('com.google.firebase:firebase-bom:33.7.0')
+    implementation 'com.google.firebase:firebase-database-ktx'
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    
+    // Image Loading
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    kapt 'com.github.bumptech.glide:compiler:4.16.0'
+    
+    // Coil for SVG support (weather icons)
+    implementation("io.coil-kt:coil:2.5.0")
+    implementation("io.coil-kt:coil-svg:2.5.0")
+    
+    // Google Maps
+    implementation 'com.google.android.gms:play-services-maps:18.2.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    
+    // Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0'
+    
+    // Network
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    
+    // Dependency constraints to fix transitive vulnerabilities
+    constraints {
+        // Fix Guava vulnerability (use Android version for Android projects)
+        implementation('com.google.guava:guava:32.0.0-android') {
+            because 'Fixes SNYK-JAVA-COMGOOGLEGUAVA-5710356'
+        }
+        // Fix Protobuf vulnerability
+        implementation('com.google.protobuf:protobuf-java:4.28.2') {
+            because 'Fixes SNYK-JAVA-COMGOOGLEPROTOBUF-8055227'
+        }
+        // Fix Commons IO vulnerability
+        implementation('commons-io:commons-io:2.14.0') {
+            because 'Fixes SNYK-JAVA-COMMONSIO-8161190'
+        }
+        // Fix Wire runtime vulnerability
+        implementation('com.squareup.wire:wire-runtime:5.2.0') {
+            because 'Fixes SNYK-JAVA-COMSQUAREUPWIRE-9459041'
+        }
+        // Fix Netty vulnerabilities (apply to all configurations)
+        implementation('io.netty:netty-codec-http2:4.1.125.Final') {
+            because 'Fixes multiple Netty vulnerabilities'
+        }
+        implementation('io.netty:netty-codec-http:4.1.125.Final') {
+            because 'Fixes HTTP smuggling vulnerabilities'
+        }
+        implementation('io.netty:netty-handler:4.1.125.Final') {
+            because 'Fixes Netty handler vulnerabilities'
+        }
+        implementation('io.netty:netty-common:4.1.118.Final') {
+            because 'Fixes Netty common vulnerabilities'
+        }
+        // Apply same constraints to test dependencies
+        testImplementation('com.google.guava:guava:32.0.0-android')
+        testImplementation('com.google.protobuf:protobuf-java:4.28.2')
+        testImplementation('commons-io:commons-io:2.14.0')
+        testImplementation('io.netty:netty-codec-http2:4.1.125.Final')
+        testImplementation('io.netty:netty-codec-http:4.1.125.Final')
+        testImplementation('io.netty:netty-handler:4.1.125.Final')
+        testImplementation('io.netty:netty-common:4.1.118.Final')
+        androidTestImplementation('com.google.guava:guava:32.0.0-android')
+        androidTestImplementation('com.google.protobuf:protobuf-java:4.28.2')
+        androidTestImplementation('commons-io:commons-io:2.14.0')
+        androidTestImplementation('io.netty:netty-codec-http2:4.1.125.Final')
+        androidTestImplementation('io.netty:netty-codec-http:4.1.125.Final')
+        androidTestImplementation('io.netty:netty-handler:4.1.125.Final')
+        androidTestImplementation('io.netty:netty-common:4.1.118.Final')
+    }
+    
+    // JSON
+    implementation 'org.json:json:20240303'
+    
+    // RecyclerView
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    
+    // ViewPager2 for slideshow
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    
+    // CardView
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'androidx.test:runner:1.5.2'
+
+    // Testing - Unit Tests
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.mockito:mockito-core:5.8.0'
+    testImplementation 'org.mockito.kotlin:mockito-kotlin:5.2.1'
+    testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.8.0'
+    testImplementation 'androidx.arch.core:core-testing:2.2.0'
+    testImplementation 'com.google.truth:truth:1.4.2'
+    testImplementation 'com.squareup.okhttp3:mockwebserver:5.0.0'
+    
+    // Testing - Instrumented Tests
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.5.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-intents:3.5.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-web:3.5.1'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test:rules:1.5.0'
+    androidTestImplementation 'androidx.test.uiautomator:uiautomator:2.3.0'
+    
+    // Hamcrest matchers required by Espresso
+    androidTestImplementation 'org.hamcrest:hamcrest:2.2'
+    androidTestImplementation 'org.hamcrest:hamcrest-library:2.2'
+    
+    // Testing - Performance
+    androidTestImplementation 'androidx.benchmark:benchmark-junit4:1.2.2'
+    
+    // Testing - UI Testing
+    androidTestImplementation 'androidx.test.espresso:espresso-idling-resource:3.5.1'
+    androidTestImplementation 'com.squareup.okhttp3:mockwebserver:5.0.0'
+    
+    // Note: Firebase Test Lab is accessed via Firebase CLI or Google Cloud Console
+    // Not available as a Gradle dependency. Use:
+    // gcloud firebase test android run --app app.apk --type instrumentation
+}
+
+// SonarQube configuration for app module
+sonarqube {
+    properties {
+        property "sonar.sources", "src/main/java"
+        property "sonar.inclusions", "src/main/**/*.kt,src/main/**/*.java"
+        property "sonar.exclusions", "**/build/**,**/R.java,**/BuildConfig.java,**/databinding/**,**/generated/**"
+        // Don't specify tests to avoid duplicate indexing
+    }
+}
+

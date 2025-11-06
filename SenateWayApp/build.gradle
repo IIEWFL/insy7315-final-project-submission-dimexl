@@ -1,0 +1,41 @@
+// Top-level build file
+buildscript {
+    ext.kotlin_version = '2.1.0'
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.5.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.gms:google-services:4.4.0'
+    }
+}
+
+plugins {
+    id "org.sonarqube" version "4.4.1.3373"
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectKey", "senateway-guesthouse"
+        property "sonar.projectName", "Senate Way Guesthouse Android App"
+        property "sonar.projectVersion", "1.0.0"
+        property "sonar.sourceEncoding", "UTF-8"
+        property "sonar.projectBaseDir", project.projectDir
+        // Only analyze app module
+        property "sonar.modules", "app"
+        property "sonar.java.source", "17"
+        property "sonar.java.target", "17"
+        property "sonar.kotlin.source", "2.1.0"
+        // SonarCloud configuration
+        property "sonar.host.url", "https://sonarcloud.io"
+        property "sonar.token", "471ac2930676fbe1a120c16e2609ae6f9ba7953d"
+        property "sonar.organization", System.getProperty("sonar.organization", System.getenv("SONAR_ORGANIZATION") ?: "st10356506")
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+

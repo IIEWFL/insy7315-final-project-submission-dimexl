@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Angga Risky. “Modern UI Design Using LinearLayout in Android Studio Tutorial.” YouTube, 6 Oct. 2017, www.youtube.com/watch?v=rmNnCs2X-Ko. Accessed 4 Nov. 2025.-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- User Message Layout -->
+    <LinearLayout
+        android:id="@+id/userMessageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/chat_bubble_user"
+            android:padding="12dp"
+            android:layout_marginStart="60dp"
+            android:maxWidth="280dp">
+
+            <TextView
+                android:id="@+id/textUserMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User message"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textUserTimestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="12:00"
+                android:textColor="#CCFFFFFF"
+                android:textSize="10sp"
+                android:layout_gravity="end" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Bot Message Layout -->
+    <LinearLayout
+        android:id="@+id/botMessageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/chat_bubble_bot"
+            android:padding="12dp"
+            android:layout_marginEnd="60dp"
+            android:maxWidth="280dp">
+
+            <TextView
+                android:id="@+id/textBotMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bot message"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textBotTimestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="12:00"
+                android:textColor="@color/text_secondary"
+                android:textSize="10sp"
+                android:layout_gravity="end" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+

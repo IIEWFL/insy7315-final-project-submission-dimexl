@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors (Dark Mode) - Light Neutral Gray -->
+    <color name="primary">#EEC9A8</color>
+    <color name="primary_dark">#6F5234</color>
+    <color name="primary_light">#FFF6ED</color>
+    <color name="primary_foreground">#242424</color>
+    
+    <!-- Secondary Colors (Dark Mode) - Medium Charcoal Gray -->
+    <color name="secondary">#595959</color>
+    <color name="secondary_dark">#696969</color>
+    <color name="secondary_foreground">#C9C9C4</color>
+    
+    <!-- Background Colors (Dark Mode) - Dark Blue-Black -->
+    <color name="background">#0f172a</color>
+    <color name="foreground">#C9C9C4</color>
+    
+    <!-- Surface Colors (Dark Mode) -->
+    <color name="surface">#000000</color>
+    <color name="surface_variant">#000000</color>
+    <color name="on_surface">#C9C9C4</color>
+    
+    <!-- Card Colors (Dark Mode) -->
+    <color name="card">#1A1F2E</color>
+    <color name="card_foreground">#C9C9C4</color>
+    
+    <!-- Muted Colors (Dark Mode) -->
+    <color name="muted">#595959</color>
+    <color name="muted_foreground">#9CA3AF</color>
+    
+    <!-- Accent Colors (Dark Mode) -->
+    <color name="accent">#DBAC5E</color>
+    <color name="accent_foreground">#0f172a</color>
+    
+    <!-- Text Colors (Dark Mode) -->
+    <color name="text_primary">#C9C9C4</color>
+    <color name="text_secondary">#9CA3AF</color>
+    
+    <!-- Border & Input Colors (Dark Mode) -->
+    <color name="border">#232937</color>
+    <color name="input">#232937</color>
+    <color name="input_background">#1A1F2E</color>
+    <color name="ring">#C9C9C4</color>
+    
+    <!-- Popover Colors (Dark Mode) -->
+    <color name="popover">#1A1F2E</color>
+    <color name="popover_foreground">#C9C9C4</color>
+    
+    <!-- Destructive Colors (Dark Mode) -->
+    <color name="destructive">#DC2626</color>
+    <color name="destructive_foreground">#C9C9C4</color>
+    
+    <!-- Divider (Dark Mode) -->
+    <color name="divider">#595959</color>
+    
+    <!-- Glass Effect Colors (Dark Mode) - Semi-transparent black -->
+    <color name="glass_background">#80000000</color>
+    
+    <!-- Glass Card Text Colors (Dark Mode) - Light colors for readability -->
+    <color name="glass_text_primary">#FFC9C9C4</color>
+    <color name="glass_text_secondary">#FF9CA3AF</color>
+    
+    <!-- DatePicker Colors (Dark Mode) -->
+    <color name="datepicker_day_text_color">#FFFFFFFF</color>
+    <color name="datepicker_selected_day_background">#1AEEC9A8</color>
+    <color name="datepicker_selected_day_text_color">#FFFFFFFF</color>
+</resources>
+

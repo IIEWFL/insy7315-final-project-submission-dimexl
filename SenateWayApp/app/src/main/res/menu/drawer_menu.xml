@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@android:drawable/ic_menu_view"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_rooms"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="@string/nav_rooms" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@android:drawable/ic_menu_gallery"
+            android:title="@string/nav_gallery" />
+        <item
+            android:id="@+id/nav_reviews"
+            android:icon="@android:drawable/ic_menu_recent_history"
+            android:title="@string/nav_reviews" />
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@android:drawable/ic_menu_mylocation"
+            android:title="@string/nav_location" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="@string/nav_contact" />
+        <item
+            android:id="@+id/nav_chatbot"
+            android:icon="@android:drawable/ic_menu_always_landscape_portrait"
+            android:title="@string/nav_chatbot" />
+    </group>
+    
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_theme_toggle"
+            android:icon="@android:drawable/ic_menu_revert"
+            android:title="@string/nav_theme_toggle" />
+        <item
+            android:id="@+id/nav_admin"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="@string/nav_admin" />
+    </group>
+</menu>
+

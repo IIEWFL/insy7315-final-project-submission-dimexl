@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme - Light Mode -->
+    <style name="Theme.SenateWayApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary Colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/primary_foreground</item>
+        
+        <!-- Secondary Colors -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/secondary_foreground</item>
+        
+        <!-- Tertiary/Accent Colors -->
+        <item name="colorTertiary">@color/accent</item>
+        <item name="colorOnTertiary">@color/accent_foreground</item>
+        
+        <!-- Background Colors -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        
+        <!-- Text Colors -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        
+        <!-- Error/Destructive Colors -->
+        <item name="colorError">@color/destructive</item>
+        <item name="colorOnError">@color/destructive_foreground</item>
+        
+        <!-- Outline/Border -->
+        <item name="colorOutline">@color/border</item>
+        <item name="colorOutlineVariant">@color/input</item>
+        
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:navigationBarColor">@color/background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        
+        <!-- Toolbar Title Text Color - Black -->
+        <item name="titleTextColor">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        
+        <!-- DatePicker Style -->
+        <item name="android:datePickerStyle">@style/DatePickerStyle</item>
+    </style>
+    
+    <!-- Custom Toolbar Style with Black Text -->
+    <style name="ToolbarStyle" parent="Widget.Material3.Toolbar">
+        <item name="titleTextColor">@color/black</item>
+        <item name="subtitleTextColor">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="titleTextAppearance">@style/ToolbarTitleTextAppearance</item>
+        <item name="titleMarginTop">20dp</item>
+        <item name="titleMarginBottom">0dp</item>
+        <item name="contentInsetStartWithNavigation">16dp</item>
+        <item name="android:gravity">center_vertical|start</item>
+    </style>
+    
+    <!-- Toolbar Title Text Appearance -->
+    <style name="ToolbarTitleTextAppearance" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    
+    <!-- Splash Screen Theme -->
+    <style name="Theme.SplashScreen" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/primary</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:navigationBarColor">@color/primary</item>
+    </style>
+    
+    <!-- DatePicker Dialog Theme for Light Mode -->
+    <style name="DatePickerDialogTheme" parent="ThemeOverlay.Material3.Dialog">
+        <item name="android:datePickerStyle">@style/DatePickerStyle</item>
+        <item name="colorControlActivated">@color/datepicker_selected_day_background</item>
+        <item name="android:textColorPrimary">@color/datepicker_day_text_color</item>
+        <item name="android:textColorSecondary">@color/datepicker_day_text_color</item>
+    </style>
+    
+    <!-- DatePicker Style for Light Mode -->
+    <style name="DatePickerStyle" parent="@android:style/Widget.Material.DatePicker">
+        <!-- Calendar day text color - Black in light mode -->
+        <item name="android:textColorPrimary">@color/datepicker_day_text_color</item>
+        <item name="android:textColor">@color/datepicker_day_text_color</item>
+        <!-- Selected day background - Translucent primary color -->
+        <item name="colorControlActivated">@color/datepicker_selected_day_background</item>
+        <!-- Selected day text color - Black for contrast -->
+        <item name="colorOnPrimary">@color/datepicker_selected_day_text_color</item>
+        <!-- Normal day text color -->
+        <item name="android:textColorSecondary">@color/datepicker_day_text_color</item>
+    </style>
+</resources>
+

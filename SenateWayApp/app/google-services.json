@@ -1,0 +1,31 @@
+{
+  "project_info": {
+    "project_id": "senateway-f2c37",
+    "project_number": "118997397813",
+    "storage_bucket": "senateway-f2c37.firebasestorage.app",
+    "firebase_url": "https://senateway-f2c37-default-rtdb.firebaseio.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118997397813:android:23c6193d932a01e9d21c7c",
+        "android_client_info": {
+          "package_name": "com.senateway.guesthouse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN0vNr8ulD-qVpOUQaesdHtfyBqBIo9Hs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+
