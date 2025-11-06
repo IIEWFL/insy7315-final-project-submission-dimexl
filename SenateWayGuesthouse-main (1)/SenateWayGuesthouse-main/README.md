@@ -1,0 +1,100 @@
+# SenateWay Guesthouse Website
+
+A modern, responsive website for SenateWay Guesthouse in Kimberley, South Africa.
+
+## Features
+
+- 🏨 **Room Listings** - Browse available rooms with filters
+- 📅 **Booking System** - Online booking requests
+- 📸 **Photo Gallery** - Beautiful images of the guesthouse
+- ⭐ **Reviews** - Guest reviews and ratings
+- 💬 **AI Chatbot** - Interactive assistant powered by Google Gemini
+- 🗺️ **Interactive Map** - Location with Google Maps
+- 🌤️ **Weather Widget** - Current weather for Kimberley
+- 🔐 **Admin Dashboard** - Manage bookings and view analytics
+- 🌓 **Dark Mode** - Toggle between light and dark themes
+
+## Tech Stack
+
+- **React** + **TypeScript** + **Vite**
+- **Tailwind CSS** for styling
+- **Firebase** for database, authentication, and analytics
+- **EmailJS** for email notifications
+- **Google Maps API** for interactive maps
+- **AccuWeather API** for weather data
+- **Google Gemini AI** for chatbot
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+ and npm
+- Firebase account
+- EmailJS account
+- Google Maps API key
+- AccuWeather API key
+- Gemini API key
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone <your-repo-url>
+cd SenateApp
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Create `.env` file
+```bash
+cp .env.example .env
+```
+
+4. Fill in your API keys in `.env`
+
+5. Start development server
+```bash
+npm run dev
+```
+
+## Environment Variables
+
+See `NETLIFY_DEPLOYMENT.md` for a complete list of required environment variables.
+
+## Testing
+
+```bash
+# Run all tests
+npm run test:all
+
+# Run specific test suites
+npm test
+npm run test:integration
+npm run test:functional
+```
+
+## Deployment to Netlify
+
+1. Connect your repository to Netlify
+2. Set environment variables in Netlify dashboard
+3. Deploy automatically on push
+
+See `NETLIFY_DEPLOYMENT.md` for detailed deployment instructions.
+
+## Project Structure
+
+```
+├── pages/          # React components
+├── hooks/          # Custom React hooks
+├── lib/            # Utility functions
+├── netlify/        # Netlify Functions
+├── __tests__/      # Test files
+└── public/         # Static assets
+```
+
+## License
+
+Private project for SenateWay Guesthouse
