@@ -4,7 +4,7 @@
 
 A comprehensive guesthouse management application suite consisting of both a native Android mobile application and a web application, developed for the Senate Way Guesthouse located in Kimberley, Northern Cape, South Africa.
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Project Structure](#project-structure)
@@ -20,7 +20,7 @@ A comprehensive guesthouse management application suite consisting of both a nat
 - [Contributors](#contributors)
 - [License](#license)
 
-## 🎯 Overview
+## Overview
 
 This repository contains the complete implementation of the Senate Way Guesthouse booking and management system, featuring:
 
@@ -29,7 +29,7 @@ This repository contains the complete implementation of the Senate Way Guesthous
 - **Comprehensive Testing Suite**: Unit tests, integration tests, UI tests, and performance tests
 - **Documentation**: Project documentation, diagrams, and deployment guides
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── SenateWayApp/                    # Native Android Application
@@ -59,21 +59,21 @@ This repository contains the complete implementation of the Senate Way Guesthous
 └── README.md                       # This file
 ```
 
-## ✨ Features
+## Features
 
 ### Android Application Features
 
-- 🏠 **Home Screen**: Hero section with features showcase and about section
-- 🛏️ **Rooms**: Browse available rooms with filtering capabilities
-- 📸 **Gallery**: Photo gallery with image viewer functionality
-- ⭐ **Reviews**: Guest reviews and ratings display
-- 📍 **Location**: Interactive Google Maps integration
-- 📧 **Contact & Booking**: Contact form with Firebase integration
-- 🤖 **AI Chatbot**: AI-powered assistant for guest inquiries
-- 👨‍💼 **Admin Dashboard**: Admin login and booking management
-- 🌓 **Dark Mode**: Theme switching support
-- 🔔 **Real-time Updates**: Firebase Realtime Database integration
-- 📱 **Material Design 3**: Modern, responsive UI
+- **Home Screen**: Hero section with features showcase and about section
+- **Rooms**: Browse available rooms with filtering capabilities
+- **Gallery**: Photo gallery with image viewer functionality
+- **Reviews**: Guest reviews and ratings display
+- **Location**: Interactive Google Maps integration
+- **Contact & Booking**: Contact form with Firebase integration
+- **AI Chatbot**: AI-powered assistant for guest inquiries
+- **Admin Dashboard**: Admin login and booking management
+- **Dark Mode**: Theme switching support
+- **Real-time Updates**: Firebase Realtime Database integration
+- **Material Design 3**: Modern, responsive UI
 
 ### Web Application Features
 
@@ -85,7 +85,7 @@ This repository contains the complete implementation of the Senate Way Guesthous
 - Review and rating system
 - Interactive map integration
 
-## 🛠️ Technologies
+## Technologies
 
 ### Android Application
 
@@ -113,7 +113,7 @@ This repository contains the complete implementation of the Senate Way Guesthous
 - **Backend**: Firebase
 - **Deployment**: Netlify
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -277,9 +277,9 @@ See `SenateWayGuesthouse-main/SenateWayGuesthouse-main/README_TESTING.md` for we
 - **Architecture Diagram**: `diagramnew.drawio` - System architecture visualization
 - **Project Documentation**: `INSY7315 POE.pdf` - Complete project documentation
 
-## 🔒 Security Notes
+## Security Notes
 
-⚠️ **Important**: This repository contains placeholder API keys. Before deploying:
+**Important**: This repository contains placeholder API keys. Before deploying:
 
 1. Replace all placeholder API keys in `strings.xml` with your actual keys
 2. Never commit real API keys to version control
@@ -287,23 +287,23 @@ See `SenateWayGuesthouse-main/SenateWayGuesthouse-main/README_TESTING.md` for we
 4. Review and update Firebase security rules
 5. Enable API key restrictions in Google Cloud Console
 
-## 👥 Contributors
+## Contributors
 
 - **@ST10356407** (Sahil) - Project development
 - **@Veeasha** - Project development
 
-## 📄 License
+## License
 
 This project is part of an academic submission for INSY7315. All rights reserved.
 
-## 📞 Contact Information
+## Contact Information
 
 **Senate Way Guesthouse**
-- 📍 Address: 10 Senate Way, 8345 Kimberley, Northern Cape, South Africa
-- 📞 Phone: +27 82 927 8907
-- 📧 Email: vanessa141169@yahoo.com
+- Address: 10 Senate Way, 8345 Kimberley, Northern Cape, South Africa
+- Phone: +27 82 927 8907
+- Email: vanessa141169@yahoo.com
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Material Design 3 components and guidelines
 - Firebase for backend services
@@ -311,5 +311,3 @@ This project is part of an academic submission for INSY7315. All rights reserved
 - All open-source libraries and frameworks used in this project
 
 ---
-
-**Note**: This is a final project submission for academic purposes. For production deployment, ensure proper security measures, API key management, and comprehensive testing are performed.
