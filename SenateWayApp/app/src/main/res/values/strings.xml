@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Senate Way Guesthouse</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_rooms">Rooms</string>
+    <string name="nav_gallery">Gallery</string>
+    <string name="nav_reviews">Reviews</string>
+    <string name="nav_location">Location</string>
+    <string name="nav_contact">Contact</string>
+    <string name="nav_chatbot">AI Assistant</string>
+    
+    <!-- Home -->
+    <string name="hero_title">Welcome to Senate Way Guesthouse</string>
+    <string name="hero_subtitle">Experience comfort and hospitality in the heart of Kimberley. Your perfect stay awaits with modern amenities and exceptional service.</string>
+    <string name="button_view_rooms">View Our Rooms</string>
+    <string name="button_book_now">Book Now</string>
+    
+    <!-- Contact Info -->
+    <string name="contact_address">10 Senate Way, 8345 Kimberley, Northern Cape, South Africa</string>
+    <string name="contact_phone">+27 82 927 8907</string>
+    <string name="contact_email">vanessa141169@yahoo.com</string>
+    
+    <!-- Features -->
+    <string name="feature_wifi">Free WiFi</string>
+    <string name="feature_wifi_desc">High-Speed Internet</string>
+    <string name="feature_parking">Free Parking</string>
+    <string name="feature_parking_desc">On-Site Private</string>
+    <string name="feature_bbq">BBQ Facilities</string>
+    <string name="feature_bbq_desc">Outdoor Area</string>
+    <string name="feature_rated">Top Rated</string>
+    <string name="feature_rated_desc">Guest Favorite</string>
+    
+    <!-- Common -->
+    <string name="loading">Loading…</string>
+    <string name="error">Error</string>
+    <string name="retry">Retry</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    
+    <!-- Form Labels -->
+    <string name="label_name">Full Name</string>
+    <string name="label_email">Email Address</string>
+    <string name="label_phone">Phone Number</string>
+    <string name="label_guests">Number of Guests</string>
+    <string name="label_checkin">Check-in Date</string>
+    <string name="label_checkout">Check-out Date</string>
+    <string name="label_message">Message</string>
+    
+    <!-- Google Maps -->
+    <string name="google_maps_key">YOUR_GOOGLE_MAPS_API_KEY</string>
+    
+    <!-- Weather -->
+    <string name="accuweather_api_key">YOUR_ACCUWEATHER_API_KEY</string>
+    
+    <!-- Gemini AI -->
+    <string name="gemini_api_key">YOUR_GEMINI_API_KEY</string>
+    
+    <!-- EmailJS -->
+    <string name="emailjs_service_id">service_ay0xwqk</string>
+    <string name="emailjs_public_key">1EGw5SZnqNNFre2CR</string>
+    <string name="emailjs_template_booking_received">template_7i5bzvy</string>
+    <string name="emailjs_template_booking_confirmed">template_ql8yhse</string>
+    <string name="weather_loading">Loading weather data…</string>
+    <string name="weather_error">Unable to load weather data</string>
+    <string name="weather_current_kimberley">Current Weather in Kimberley</string>
+    <string name="weather_temperature">Temperature</string>
+    <string name="weather_feels_like">Feels Like</string>
+    <string name="weather_wind_speed">Wind Speed</string>
+    <string name="weather_humidity">Humidity</string>
+    <string name="weather_pressure">Pressure</string>
+    <string name="weather_uv_index">UV Index</string>
+    <string name="weather_visibility">Visibility</string>
+    <string name="weather_wind_gust">Wind Gust</string>
+    <string name="weather_dew_point">Dew Point</string>
+    <string name="weather_cloud_cover">Cloud Cover</string>
+    
+    <!-- Navigation Drawer -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_theme_toggle">Change Theme</string>
+    <string name="nav_admin">Admin</string>
+</resources>
+
