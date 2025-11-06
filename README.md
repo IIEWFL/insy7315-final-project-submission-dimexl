@@ -193,7 +193,7 @@ This repository contains the complete implementation of the Senate Way Guesthous
 
 See `SenateWayGuesthouse-main/SenateWayGuesthouse-main/README.md` for detailed web application setup.
 
-## ⚙️ Configuration
+## Configuration
 
 ### Android App Configuration
 
@@ -218,7 +218,7 @@ All API keys are stored in `app/src/main/res/values/strings.xml`. Replace placeh
 
 For security, consider using environment variables or a configuration file for sensitive data in production builds.
 
-## 🧪 Testing
+## Testing
 
 ### Android Application Testing
 
@@ -265,7 +265,7 @@ For detailed testing documentation, see:
 
 See `SenateWayGuesthouse-main/SenateWayGuesthouse-main/README_TESTING.md` for web application testing instructions.
 
-## 📚 Project Documentation
+## Project Documentation
 
 - **Android App README**: `SenateWayApp/README.md` - Detailed Android app documentation
 - **Testing Guide**: `SenateWayApp/TESTING_GUIDE.md` - Comprehensive testing documentation
